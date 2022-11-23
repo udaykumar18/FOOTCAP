@@ -4,556 +4,454 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+
+    <!-- <-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- CUSTOM CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FOOTCAP</title>
   </head>
   <body>
-    <!-- ################################# HEADER ############################  -->
-
+    <!-- ###################### HEADER ######################  -->
     <header>
-      <div class="container flex justify-content align-items">
-        <div class="logo">
-          <a href="#"><img src="./img/logo.svg" alt="" /></a>
-        </div>
-        <div class="menu">
-          <ul class="flex align-items justify-content">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="nav-action-list">
-          <ul class="flex align-items justify-content">
-            <li>
-              <a href="#"><ion-icon name="search-outline"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="person-outline"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="logo">
+                <img src="img/logo.png" alt="" />
+              </div>
+              <div class="menu">
+                <ul class="d-flex justify-content-between align-items-center">
+                  <li><a href="#" class="active">Home</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#" class="ud-btn secondary-btn">Register</a></li>
+                  <li><a href="#" class="ud-btn primary-btn">Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- ####################################### HERO ###########################  -->
-
-    <section class="hero flex align-items">
-      <div class="container">
-        <div class="hero-content">
-          <h2>New Summer <br /><span>Shoes Collection</span></h2>
-          <p>
-            Competently expedite alternative benefits whereas leading-edge<br />
-            catalysts for change. Globally leverage existing<br />
-            an expanded array of leadership.
-          </p>
-          <a href="#">
-            <span class="title">Shop Now</span>
-            <span class="icon"
-              ><ion-icon name="arrow-forward-outline"></ion-icon
-            ></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ################################# COLLECTIONS ########################  -->
-    <section class="collections">
-      <div class="container flex align-items justify-content">
-        <div class="card card1 text-align flex-reverse">
-          <h2>MEN COLLECTIONS</h2>
-          <a href="#">
-            <span class="title">Explore All</span>
-            <span class="icon"
-              ><ion-icon name="arrow-forward-outline"></ion-icon
-            ></span>
-          </a>
-        </div>
-        <div class="card card2 text-align flex-reverse">
-          <h2>WOMEN COLLECTIONS</h2>
-          <a href="#">
-            <span class="title">Explore All</span>
-            <span class="icon"
-              ><ion-icon name="arrow-forward-outline"></ion-icon
-            ></span>
-          </a>
-        </div>
-        <div class="card card3 text-align flex-reverse">
-          <h2>SPORTS COLLECTIONS</h2>
-          <a href="#">
-            <span class="title">Explore All</span>
-            <span class="icon"
-              ><ion-icon name="arrow-forward-outline"></ion-icon
-            ></span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- ############################## PRODUCT ###################  -->
-
-    <section class="products">
-      <div class="container">
-        <div class="heading text-align">
-          <h2>Bestsellers Products</h2>
-          <ul class="flex align-items justify-content">
-            <li><a href="#" class="active">All</a></li>
-            <li><a href="#">Nike</a></li>
-            <li><a href="#">Adidas</a></li>
-            <li><a href="#">Puma</a></li>
-            <li><a href="#">Bata</a></li>
-            <li><a href="#">Apex</a></li>
-          </ul>
-        </div>
-        <div class="product-cards flex align-items justify-content">
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-1.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-2.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-3.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-4.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-        </div>
-        <div class="product-cards flex align-items justify-content">
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-5.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-6.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-7.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="./img/product-8.jpg" alt="" />
-              <span class="new-tag">New</span>
-              <ul class="card-action-list">
-                <li>
-                  <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><ion-icon name="swap-horizontal-outline"></ion-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-content text-align">
-              <ul>
-                <li><a href="#">Men</a></li>
-                <li>/</li>
-                <li><a href="#">Women</a></li>
-              </ul>
-              <a href="#" class="product-name">Running Sneaker Shoes</a>
-              <h3>$180.85</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ############################ ADD #################33  -->
-
-    <section class="add">
-      <div class="container">
-        <div class="add-cards flex align-items justify-content">
-          <div class="card card1">
-            <div class="card-content">
-              <h3>Adidas Shoes</h3>
-              <h2>The Summer Sale <br />Off 50%</h2>
-              <a href="#">
-                <span class="title">Shop Now</span>
-                <span class="icon"
-                  ><ion-icon name="arrow-forward-outline"></ion-icon
+    <!-- ###################### SLIDER ##################  -->
+    <section class="fi-slider">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="slider-img">
+                    <img src="img/img_1.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>
+                      Be the fastest in<br />
+                      delivering
+                      <span>your food</span>
+                    </h1>
+                    <p>
+                      Our job is to filling your tummy with delicious food and
+                      with fast and free delivery
+                    </p>
+                    <div class="slider-btns">
+                      <a href="#" class="ud-btn primary-btn">Get Started</a>
+                      <a href="#" class="ud-btn secondary-btn">
+                        <span class="icon"
+                          ><ion-icon name="play"></ion-icon
+                        ></span>
+                        <span class="title">Watch Video</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slider-img">
+                    <img src="img/img_2.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>
+                      Be the fastest in<br />
+                      delivering
+                      <span>your food</span>
+                    </h1>
+                    <p>
+                      Our job is to filling your tummy with delicious food and
+                      with fast and free delivery
+                    </p>
+                    <div class="slider-btns">
+                      <a href="#" class="ud-btn primary-btn">Get Started</a>
+                      <a href="#" class="ud-btn secondary-btn">
+                        <span class="icon"
+                          ><ion-icon name="play"></ion-icon
+                        ></span>
+                        <span class="title">Watch Video</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slider-img">
+                    <img src="img/img_3.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>
+                      Be the fastest in<br />
+                      delivering
+                      <span>your food</span>
+                    </h1>
+                    <p>
+                      Our job is to filling your tummy with delicious food and
+                      with fast and free delivery
+                    </p>
+                    <div class="slider-btns">
+                      <a href="#" class="ud-btn primary-btn">Get Started</a>
+                      <a href="#" class="ud-btn secondary-btn">
+                        <span class="icon"
+                          ><ion-icon name="play"></ion-icon
+                        ></span>
+                        <span class="title">Watch Video</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
                 ></span>
-              </a>
-            </div>
-          </div>
-          <div class="card card2">
-            <div class="card-content">
-              <h3>Nike Shoes</h3>
-              <h2>Makes Yourself <br />sKeep Sporty</h2>
-              <a href="#">
-                <span class="title">Shop Now</span>
-                <span class="icon"
-                  ><ion-icon name="arrow-forward-outline"></ion-icon
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
                 ></span>
-              </a>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ############################### SPECIAL #######################  -->
-
-    <section class="special">
-      <div class="container flex align-items justify-content">
-        <div class="special-banner flex-reverse text-align">
-          <h2>New Trend Edition</h2>
-          <a href="#">
-            <span class="title">Explore All</span>
-            <span class="icon"
-              ><ion-icon name="arrow-forward-outline"></ion-icon
-            ></span>
-          </a>
-        </div>
-        <div class="special-products">
-          <div class="heading">
-            <h2>Nike Special</h2>
-          </div>
-          <div class="special-products-cards flex justify-content align-items">
-            <div class="card">
-              <div class="card-img">
-                <img src="./img/product-2.jpg" alt="" />
-                <span class="new-tag">New</span>
-                <ul class="card-action-list">
-                  <li>
-                    <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><ion-icon name="swap-horizontal-outline"></ion-icon
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-content text-align">
-                <ul>
-                  <li><a href="#">Men</a></li>
-                  <li>/</li>
-                  <li><a href="#">Women</a></li>
-                </ul>
-                <a href="#" class="product-name">Running Sneaker Shoes</a>
-                <h3>$180.85</h3>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="./img/product-6.jpg" alt="" />
-                <span class="new-tag">New</span>
-                <ul class="card-action-list">
-                  <li>
-                    <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><ion-icon name="swap-horizontal-outline"></ion-icon
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-content text-align">
-                <ul>
-                  <li><a href="#">Men</a></li>
-                  <li>/</li>
-                  <li><a href="#">Women</a></li>
-                </ul>
-                <a href="#" class="product-name">Running Sneaker Shoes</a>
-                <h3>$180.85</h3>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="./img/product-4.jpg" alt="" />
-                <span class="new-tag">New</span>
-                <ul class="card-action-list">
-                  <li>
-                    <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"><ion-icon name="eye-outline"></ion-icon></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><ion-icon name="swap-horizontal-outline"></ion-icon
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-content text-align">
-                <ul>
-                  <li><a href="#">Men</a></li>
-                  <li>/</li>
-                  <li><a href="#">Women</a></li>
-                </ul>
-                <a href="#" class="product-name">Running Sneaker Shoes</a>
-                <h3>$180.85</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ############################### SERVICES #####################  -->
-
-    <section class="services">
+    <!-- #####################33 SERVICES #################  -->
+    <section class="fi-services">
       <div class="container">
-        <ul class="service-list flex align-items justify-content">
-          <li class="flex align-items">
-            <span class="icon"><img src="./img/service-1.png" alt="" /></span>
-            <span class="title">
-              <h2>FREE SHIPING</h2>
-              <p>All orders over <span class="pink">$150</span></p>
-            </span>
-          </li>
-          <li class="flex align-items">
-            <span class="icon"><img src="./img/service-2.png" alt="" /></span>
-            <span class="title">
-              <h2>QUICK PAYMENT</h2>
-              <p>100% secure payment</p>
-            </span>
-          </li>
-          <li class="flex align-items">
-            <span class="icon"><img src="./img/service-3.png" alt="" /></span>
-            <span class="title">
-              <h2>FREE RETURNS</h2>
-              <p>Money back in 30 days</p>
-            </span>
-          </li>
-          <li class="flex align-items">
-            <span class="icon"><img src="./img/service-4.png" alt="" /></span>
-            <span class="title">
-              <h2>24/7 SUPPORT</h2>
-              <p>Get Quick Support</p>
-            </span>
-          </li>
-        </ul>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fi-heading text-center">
+              <div class="heading">
+                <h3>WHAT WE SERVE</h3>
+              </div>
+              <div class="sub-heading">
+                <h2>
+                  Your Favourite Food<br />
+                  Delivery Partner
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card text-center">
+              <div class="services-img">
+                <img src="img/img1.png" alt="" />
+              </div>
+              <div class="services-content">
+                <h3>Easy To Order</h3>
+                <p>You only need a frew steps in ordering food</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card text-center">
+              <div class="services-img">
+                <img src="img/img2.png" alt="" />
+              </div>
+              <div class="services-content">
+                <h3>Easy To Order</h3>
+                <p>You only need a frew steps in ordering food</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card text-center">
+              <div class="services-img">
+                <img src="img/img3.png" alt="" />
+              </div>
+              <div class="services-content">
+                <h3>Easy To Order</h3>
+                <p>You only need a frew steps in ordering food</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ######################## JAVASCRIPT LINKS #####################  -->
+    <!-- ##################### MENU ##################  -->
+    <section class="fi-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fi-heading text-center mb-5">
+              <div class="heading">
+                <h3>WHAT THEY SAY</h3>
+              </div>
+              <div class="sub-heading">
+                <h2>what our customer <br />say about us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="menu-card text-center">
+              <div class="card-img">
+                <img src="img/icon_1.png" alt="" />
+              </div>
+              <h3>Burger</h3>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="menu-card text-center">
+              <div class="card-img">
+                <img src="img/icon_2.png" alt="" />
+              </div>
+              <h3>Pizza</h3>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="menu-card text-center">
+              <div class="card-img">
+                <img src="img/icon_3.png" alt="" />
+              </div>
+              <h3>Fried Chicken</h3>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="menu-card text-center">
+              <div class="card-img">
+                <img src="img/icon_4.png" alt="" />
+              </div>
+              <h3>Drink</h3>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="menu-card text-center">
+              <div class="card-img">
+                <img src="img/icon_5.png" alt="" />
+              </div>
+              <h3>Salad</h3>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="menu-card text-center">
+              <div class="card-img">
+                <img src="img/icon_6.png" alt="" />
+              </div>
+              <h3>Sandwich</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################3 CUSTOMER ##############  -->
+    <section class="fi-customer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fi-heading text-center mb-5">
+              <div class="heading">
+                <h3>WHAT THEY SAY</h3>
+              </div>
+              <div class="sub-heading">
+                <h2>what our customer <br />say about us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="customer-card">
+              <div class="card-content">
+                <h2>
+                  “The food is fabulous as also are the staff. If you want
+                  fabulous authentic Chinese food, make sure you go here.”
+                </h2>
+              </div>
+              <div class="customer-profile d-flex align-items-center">
+                <div class="profile">
+                  <img src="img/profile.png" alt="" />
+                </div>
+                <div class="profile-content">
+                  <h3>Cooper Kristin</h3>
+                  <h5>Food Courier</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="customer-card">
+              <div class="card-content">
+                <h2>
+                  “The food is fabulous as also are the staff. If you want
+                  fabulous authentic Chinese food, make sure you go here.”
+                </h2>
+              </div>
+              <div class="customer-profile d-flex align-items-center">
+                <div class="profile">
+                  <img src="img/profile.png" alt="" />
+                </div>
+                <div class="profile-content">
+                  <h3>Cooper Kristin</h3>
+                  <h5>Food Courier</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################# APP ################  -->
+
+    <section class="fi-app">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="fi-heading">
+              <div class="heading">
+                <h3>DOWNLOAD APP</h3>
+              </div>
+              <div class="sub-heading">
+                <h2>
+                  Get Started with<br />
+                  Food Island Today!
+                </h2>
+              </div>
+            </div>
+            <p>
+              Discover food wherever and whenever and get your food delivered
+              quickly.
+            </p>
+            <ul class="d-flex">
+              <li>
+                <a href="#">
+                  <img src="img/play_store.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/apple_store.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="app-img">
+              <img src="img/mobile muckup.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############# FOOTER ############  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo">
+              <img src="img/logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Why Choose Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Tomatoes</a></li>
+              <li><a href="#">Mangoes</a></li>
+              <li><a href="#">Red cheries</a></li>
+              <li><a href="#">Banana</a></li>
+              <li><a href="#">Carrots</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Social</h3>
+            <ul class="social-icons d-flex">
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 text-center">
+            <hr />
+            <p>© 2022 UDAY | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT  -->
+    <script src="./js/bootstrap.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
