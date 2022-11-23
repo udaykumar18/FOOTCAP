@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+a {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+
+/* ############################ UTILITY CLASSES ###########################  */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flow-root;
+}
+.flex {
+  display: flex;
+}
+.align-items {
+  align-items: center;
+}
+.justify-content {
+  justify-content: space-between;
+}
+.spacearound {
+  justify-content: space-around;
+}
+.text-align {
+  text-align: center;
+}
+
+.pink {
+  color: #ff6e60;
+}
+.flex-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ############################## HEADER ############################  */
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #fefefe;
+  padding: 1.8rem 0;
+}
+
+header .logo {
+  width: 160px;
+  height: auto;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .menu ul li a {
+  display: inline-block;
+  color: #11151d;
+  margin-right: 2.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+header .menu ul li a:hover {
+  color: #ff6e60;
+  border-bottom: 3px solid #ff6e60;
+}
+header .nav-action-list ul li a {
+  color: #11151d;
+  margin-right: 2rem;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+header .nav-action-list ul li a:hover {
+  color: #ff6e60;
+}
+
+/* ####################### HERO ###########################  */
+
+.hero {
+  width: 100%;
+  height: 650px;
+  background: url(./img/hero-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-content h2 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.hero .hero-content span {
+  font-weight: 600;
+}
+.hero .hero-content p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: #45444b;
+}
+.hero .hero-content a {
+  display: inline-block;
+  margin-top: 2rem;
+  color: white;
+  padding: 1.5rem 3rem;
+  background-color: #ff6e60;
+  transition: 0.4s;
+}
+.hero .hero-content a:hover {
+  border: 2px solid #ff6e60;
+  background-color: #fefefe;
+  color: #11151d;
+}
+
+.hero .hero-content a .icon {
+  position: relative;
+  top: 3px;
+}
+
+/* ####################### COLLECTIONS ########################  */
+.collections {
+  width: 100%;
+  height: auto;
+  padding: 10rem 0;
+}
+.collections .container .card {
+  width: 373px;
+  height: 373px;
+}
+.collections .container .card1 {
+  background: url(./img/collection-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collections .container .card2 {
+  background: url(./img/collection-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.collections .container .card3 {
+  background: url(./img/collection-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.collections .container .card h2 {
+  font-size: 2rem;
+  margin-top: 3.5rem;
+}
+
+.collections .container .card a {
+  display: inline-block;
+  border: 1px solid #11151d;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 150px;
+  padding: 1.3rem 2rem;
+  color: #11151d;
+  transition: 0.4s;
+}
+.collections .container .card a:hover {
+  background-color: #fefefe;
+}
+.collections .container .card a .icon {
+  position: relative;
+  top: 3px;
+}
+
+/* ############################# PRODUCTS ######################  */
+
+.products {
+  width: 100%;
+  height: auto;
+}
+.products .heading {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.products .heading ul li a {
+  display: inline-block;
+  color: #11151d;
+  border: 2px solid #ff6e60;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.products .heading ul li .active {
+  background-color: #ff6e60;
+  color: #fefefe;
+}
+
+/* ###### PRODUCT CARD #### */
+
+.products .product-cards {
+  margin-bottom: 3rem;
+}
+.products .product-cards .card {
+  width: 275px;
+  height: auto;
+  overflow: hidden;
+}
+
+.products .product-cards .card .card-img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.products .product-cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.products .product-cards .card:hover .card-img img {
+  transform: scale(1.1);
+}
+.products .product-cards .card .card-img .new-tag {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  background-color: #ff6e60;
+  color: #fefefe;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.products .product-cards .card .card-img .card-action-list {
+  position: absolute;
+  top: 2rem;
+  right: -5rem;
+  transition: 0.3s;
+}
+.products .product-cards .card:hover .card-img .card-action-list {
+  right: 2rem;
+}
+
+.products .product-cards .card .card-img .card-action-list li a {
+  display: inline-block;
+  background-color: #fefefe;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  color: #11151d;
+  transition: 0.3s;
+}
+.products .product-cards .card .card-img .card-action-list li a:hover {
+  background-color: #ff6e60;
+  color: #fefefe;
+}
+.products .product-cards .card .card-content ul li {
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
+}
+.products .product-cards .card .card-content ul li a {
+  color: #45444b;
+  transition: 0.3s;
+}
+.products .product-cards .card .card-content ul li a:hover {
+  color: #ff6e60;
+}
+.products .product-cards .card .card-content .product-name {
+  display: inline-block;
+  color: #11151d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+.products .product-cards .card .card-content .product-name:hover {
+  color: #ff6e60;
+}
+.products .product-cards .card .card-content h3 {
+  margin-top: 0.2rem;
+  font-size: 1.8rem;
+  color: #ff6e60;
+}
+
+/* ################### ADD ################################  */
+
+.add {
+  width: 100%;
+  height: auto;
+  margin: 10rem 0;
+}
+
+.add .add-cards .card {
+  width: 49%;
+  height: auto;
+
+  padding: 3rem 5rem;
+}
+
+.add .add-cards .card1 {
+  background: url(./img/cta-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.add .add-cards .card2 {
+  background: url(./img/cta-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.add .add-cards .card .card-content {
+  text-align: left;
+}
+.add .add-cards .card .card-content h3 {
+  color: #fefefe;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.add .add-cards .card .card-content h2 {
+  color: #fefefe;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin: 2rem 0;
+}
+.add .add-cards .card .card-content a {
+  padding: 0.7rem 0;
+  transition: 0.3s;
+}
+.add .add-cards .card .card-content a:hover {
+  border-bottom: 2px solid #fefefe;
+}
+.add .add-cards .card .card-content a .title {
+  color: #fefefe;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.add .add-cards .card .card-content a .icon {
+  color: #fefefe;
+  position: relative;
+  top: 3px;
+}
+
+/* ######################### SPECIAL #######################  */
+
+.special {
+  width: 100%;
+  height: auto;
+  margin: 10rem 0;
+}
+
+.special .container .special-banner {
+  width: 300px;
+  height: 500px;
+  background: url(./img/special-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.special .container .special-banner h2 {
+  margin-top: 4rem;
+  color: #fefefe;
+  font-weight: 500;
+}
+.special .container .special-banner a {
+  margin: 0 auto;
+  width: 130px;
+  color: #fefefe;
+  display: inline-block;
+  margin-bottom: 3rem;
+  padding: 0.6rem 0;
+}
+.special .container .special-banner a:hover {
+  border-bottom: 1px solid #fefefe;
+}
+
+.special .container .special-banner a .title {
+  font-size: 2rem;
+}
+.special .container .special-banner a .icon {
+  font-size: 2rem;
+  position: relative;
+  top: 3px;
+}
+
+.special .special-products {
+  width: 880px;
+  height: auto;
+}
+.special .special-products .heading {
+  margin-bottom: 2rem;
+}
+.special .special-products .heading h2 {
+  font-size: 3.5rem;
+}
+
+/* ### special product card ### */
+.special .special-products .special-products-cards .card {
+  width: 275px;
+  height: auto;
+  overflow: hidden;
+}
+
+.special .special-products .special-products-cards .card .card-img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.special .special-products .special-products-cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.special .special-products .special-products-cards .card:hover .card-img img {
+  transform: scale(1.1);
+}
+.special .special-products .special-products-cards .card .card-img .new-tag {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  background-color: #ff6e60;
+  color: #fefefe;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.special
+  .special-products
+  .special-products-cards
+  .card
+  .card-img
+  .card-action-list {
+  position: absolute;
+  top: 2rem;
+  right: -5rem;
+  transition: 0.3s;
+}
+.special
+  .special-products
+  .special-products-cards
+  .card:hover
+  .card-img
+  .card-action-list {
+  right: 2rem;
+}
+
+.special
+  .special-products
+  .special-products-cards
+  .card
+  .card-img
+  .card-action-list
+  li
+  a {
+  display: inline-block;
+  background-color: #fefefe;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  color: #11151d;
+  transition: 0.3s;
+}
+.special
+  .special-products
+  .special-products-cards
+  .card
+  .card-img
+  .card-action-list
+  li
+  a:hover {
+  background-color: #ff6e60;
+  color: #fefefe;
+}
+.special .special-products .special-products-cards .card .card-content ul li {
+  margin: 0 auto;
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
+}
+.special .special-products .special-products-cards .card .card-content ul li a {
+  color: #45444b;
+  transition: 0.3s;
+}
+.special
+  .special-products
+  .special-products-cards
+  .card
+  .card-content
+  ul
+  li
+  a:hover {
+  color: #ff6e60;
+}
+.special
+  .special-products
+  .special-products-cards
+  .card
+  .card-content
+  .product-name {
+  display: inline-block;
+  color: #11151d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+.special
+  .special-products
+  .special-products-cards
+  .card
+  .card-content
+  .product-name:hover {
+  color: #ff6e60;
+}
+.special .special-products .special-products-cards .card .card-content h3 {
+  margin-top: 0.2rem;
+  font-size: 1.8rem;
+  color: #ff6e60;
+}
+
+/* ####################### SERVICES #######################  */
+.services {
+  width: 100%;
+  height: auto;
+  margin: 5rem 0;
+}
+.services .service-list li .icon {
+  width: 40px;
+  height: 30px;
+  padding: 3rem;
+  background-color: #ff6e60;
+}
+.services .service-list li img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
